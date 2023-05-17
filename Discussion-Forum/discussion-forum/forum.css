@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right top, #130939, #080c33, #020d2b, #000c22, #000b19, #051627, #041e37, #002647, #163677, #503fa2, #953bc1, #e110d0);
+    color: white;
+}
+
+a {
+    color: plum;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.container {
+    margin: 20px;
+    padding: 2opx;
+}
+
+.subforum {
+    margin-top: 20px;
+}
+
+.subforum-title {
+    background-image: linear-gradient(to right, #f535aa, #de27b8, #bf25c6, #962cd4, #5937e0);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.subforum-row {
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+
+}
+
+.subforum-column {
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #111314;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon i {
+    font-size: 45px;
+
+}
+
+.subforum-divider {
+    display: none;
+
+}
+
+.subforum-description * {
+    margin-block: 0;
+}
+
+.subforum-stats {
+    font-size: 12px;
+
+}
+
+.subforum-divider {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+
+}
+
+header {
+    margin-inline: 10px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    background-image: linear-gradient(to right, #f535aa, #de27b8, #bf25c6, #962cd4, #5937e0);
+
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-item a {
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+
+}
+
+.nav-item a:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+
+}
+
+.close-icon i {
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+
+
+}
+
+.hide {
+    display: none;
+
+}
+
+.bar-icon {
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.brand {
+    font-size: 60px;
+    display: inline-block;
+    font-family: aquire;
+
+}
+
+@font-face {
+    font-family: aquire;
+    src: url(aquire.otf);
+
+}
+
+.search-box {
+    border: solid 1px purple;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px purple;
+}
+
+.search-box select {
+    padding: 10px;
+}
+
+.search-box input {
+    padding: 10px;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+
+}
+
+.search-box button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 3px white;
+
+}
+
+forum-info {
+    padding: 20px;
+    background-color: black;
+
+}
+
+.chart {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: purple;
+    display: block;
+    text-align: center;
+}
+
+.table-head {
+    display: flex;
+
+}
+
+.table-head div {
+    padding: 5px;
+    margin: 2px;
+    background-color: gray;
+    font-weight: bold;
+
+}
+
+.table-head .status {
+    flex: 5%;
+
+}
+
+.table-head .subjects {
+    flex: 70%;
+
+}
+
+.table-head .replies {
+    flex: 10%;
+
+}
+
+.table-head .last-reply {
+    flex: 15%;
+
+}
+
+.table-row {
+    display: flex;
+
+}
+
+.table-row .status,
+.table-row .subjects,
+.table-row .replies,
+.table-row .last-reply {
+    padding: 5px;
+    margin: 2px;
+    background-color: black;
+
+
+}
+
+.table-row .status {
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.table-row .subjects {
+    flex: 70%;
+
+}
+
+.table-row .replies {
+    flex: 10%;
+
+}
+
+.table-row .last-reply {
+    flex: 15%;
+}
+
+.pagination {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.pagination a {
+    color: white;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px white;
+}
+
+.pagination a:hover {
+    opacity: 0.5;
+}
+
+.navigation {
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.navigate a {
+    color: white;
+
+}
+
+.navigation a:hover {
+    color: purple;
+    font-weight: bolder;
+}
+
+.note {
+
+    padding: 20px;
+    display: block;
+}
+
+.note span {
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+.head {
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.authors {
+    flex: 20%;
+}
+
+.content {
+    flex: 80%;
+}
+
+.body {
+    display: flex;
+    background-color: #131415;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.body .authors .username {
+    font-size: 20px;
+}
+
+.body .authors img {
+    max-width: 50px;
+    max-height: 80px;
+}
+
+
+.body .content .comment button {
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px white;
+    cursor: pointer;
+    float: right;
+
+
+}
+
+.comment-area {
+    margin-top: 50px;
+}
+
+.comment-area textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input {
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover {
+    border: solid 1px black;
+}
+
+
+.comments-container {
+    margin-top: 50px;
+}
